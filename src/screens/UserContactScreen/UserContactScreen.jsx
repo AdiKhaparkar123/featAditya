@@ -40,12 +40,6 @@ const UserContactScreen = () => {
     navigation.navigate('UserNameScreen');
   };
 
-  // const userData = useSelector(state => state.userInfo.userData);
-  // const previousdata = {
-  //   ...userData,
-  //   registeremail: registeremail,
-  //   phone: phone,
-  // };
   const dispatchCredentials = () => {
     dispatch(addUserContactData(registeremail, phone)), handleNavigate();
   };

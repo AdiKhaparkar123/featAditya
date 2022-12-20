@@ -30,7 +30,10 @@ const HomeScreen = () => {
       <Text style={styles.heading}>Welcome! What are you looking for ?</Text>
       <ButtonItem text="APP DEVELOPMENT" onPress={handleappDevelopment} />
       <ButtonItem text="WEB DEVELOPMENT" onPress={handlewebDevelopment} />
-      <ButtonItem text="BACKEND DEVELOPMENT" onPress={handlebackednDevelopment} />
+      <ButtonItem
+        text="BACKEND DEVELOPMENT"
+        onPress={handlebackednDevelopment}
+      />
     </SafeAreaView>
   );
 };

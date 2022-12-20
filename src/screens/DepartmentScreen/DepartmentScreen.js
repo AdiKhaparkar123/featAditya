@@ -32,7 +32,6 @@ const DepartmentScreen = () => {
     navigation.navigate('UserContactScreen');
   };
   const userData = useSelector(state => state.userInfo);
-  // console.log(userData);
 
   return (
     <SafeAreaView>
@@ -42,7 +41,7 @@ const DepartmentScreen = () => {
           style={staticstyles.arrow}
         />
       </TouchableOpacity>
-      <View style={staticstyles.greenbar}/>
+      <View style={staticstyles.greenbar} />
       <Text style={styles.heading}>
         Great! What department do you work in ?
       </Text>

@@ -37,17 +37,17 @@ const styles = StyleSheet.create({
     marginTop: 10,
     fontSize: Fonts.fontSize_15,
   },
-  modal:{
-    height:"65%",
-    width:"80%",
-    marginLeft:"10%",
-    marginTop:"30%",
+  modal: {
+    height: '65%',
+    width: '80%',
+    marginLeft: '10%',
+    marginTop: '30%',
     backgroundColor: Color.White,
   },
-  modalcontainer:{
-    flex:1,
-   backgroundColor:"grey"
-  }
+  modalcontainer: {
+    flex: 1,
+    backgroundColor: 'grey',
+  },
 });
 
 export default styles;

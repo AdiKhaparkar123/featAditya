@@ -49,8 +49,6 @@ const DemoFinalScreen = () => {
       </Text>
 
       <FormContainer
-        // Text="Company Name"
-        // placeholder="Company Name"
         autoCapitalize="words"
         value={companyName}
         onChangeText={text => setCompanyName(text)}
@@ -59,40 +57,37 @@ const DemoFinalScreen = () => {
       />
 
       <FormContainer
-        // Text="Job Title"
         Icon="key"
         onChangeText={text => setJobTitle(text)}
         value={jobTitle}
-        // placeholder="Job Title"
         maxLength={15}
         mode="outlined"
-      label="Job Title"
+        label="Job Title"
       />
-      
-        <Modal animationType="fade" visible={isModalVisible} transparent={true}>
-          <View style={styles.modalcontainer}>
-            <View style={styles.modal}>
-              <ModalText text="Product:-" data={userData.department} />
-              <ModalText text="Department:-" data={userData.field} />
-              <ModalText
-                text="Email:-"
-                data={userData.userContactData.registeremail}
-              />
-              <ModalText text="Phone:-" data={userData.userContactData.phone} />
-              <ModalText text="Name:-" data={userData.addUserName.name} />
-              <ModalText
-                text="Company Name:-"
-                data={userData.addUserCompanyData.companyName}
-              />
-              <ModalText
-                text="Job Title:-"
-                data={userData.addUserCompanyData.jobTitle}
-              />
-              <Button title={'Cancell'} onPress={modalClose} />
-            </View>
+
+      <Modal animationType="fade" visible={isModalVisible} transparent={true}>
+        <View style={styles.modalcontainer}>
+          <View style={styles.modal}>
+            <ModalText text="Product:-" data={userData.department} />
+            <ModalText text="Department:-" data={userData.field} />
+            <ModalText
+              text="Email:-"
+              data={userData.userContactData.registeremail}
+            />
+            <ModalText text="Phone:-" data={userData.userContactData.phone} />
+            <ModalText text="Name:-" data={userData.addUserName.name} />
+            <ModalText
+              text="Company Name:-"
+              data={userData.addUserCompanyData.companyName}
+            />
+            <ModalText
+              text="Job Title:-"
+              data={userData.addUserCompanyData.jobTitle}
+            />
+            <Button title={'Cancell'} onPress={modalClose} />
           </View>
-        </Modal>
-  
+        </View>
+      </Modal>
 
       <TouchableOpacity
         onPress={dispatchUserData}

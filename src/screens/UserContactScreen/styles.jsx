@@ -17,7 +17,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     textAlign: 'center',
     color: Color.White,
-   fontSize:Fonts.fontSize_15,
+    fontSize: Fonts.fontSize_15,
     paddingTop: '4%',
   },
   ButtonContainer: {

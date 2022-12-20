@@ -1,7 +1,7 @@
 import React from 'react';
-import {Text,View} from 'react-native';
+import {Text, View} from 'react-native';
 import styles from './styles';
-import { TextInput } from 'react-native-paper';
+import {TextInput} from 'react-native-paper';
 const FormContainer = ({...props}) => {
   return (
     <>
@@ -9,7 +9,6 @@ const FormContainer = ({...props}) => {
       <View style={styles.userDetails}>
         <TextInput {...props} />
       </View>
-      
     </>
   );
 };

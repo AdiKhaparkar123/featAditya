@@ -18,16 +18,10 @@ const UserNameScreen = () => {
   const [name, setFame] = useState('');
   const [surname, setSurname] = useState('');
   const dispatch = useDispatch();
-  // const userData = useSelector(state => state.userInfo.userData);
 
   const handleNavigation = () => {
     navigation.navigate('DemoFinalScreen');
   };
-  // const previousdata = {
-  //   ...userData,
-  //   name: name,
-  //   surname: surname,
-  // };
 
   const dispatchData = () => {
     dispatch(addUserName(name, surname)), handleNavigation();
@@ -48,8 +42,6 @@ const UserNameScreen = () => {
         </Text>
 
         <FormContainer
-          // Text="First Name"
-          // placeholder="First Name"
           autoCapitalize="words"
           keyboardType="email-address"
           value={name}
@@ -59,11 +51,9 @@ const UserNameScreen = () => {
         />
 
         <FormContainer
-          // Text="Last Name"
           Icon="key"
           onChangeText={text => setSurname(text)}
           value={surname}
-          // placeholder="Last Name"
           maxLength={15}
           mode="outlined"
           label="Last Name"
