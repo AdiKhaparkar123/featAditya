@@ -1,13 +1,13 @@
 import React from 'react';
-import {TextInput, Text, View} from 'react-native';
+import {Text,View} from 'react-native';
 import styles from './styles';
-
+import { TextInput } from 'react-native-paper';
 const FormContainer = ({...props}) => {
   return (
     <>
       <Text style={styles.userInputHeader}>{props.Text}</Text>
       <View style={styles.userDetails}>
-        <TextInput {...props}/>
+        <TextInput {...props} />
       </View>
       
     </>

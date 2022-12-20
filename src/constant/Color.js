@@ -4,5 +4,6 @@ export const Color = {
   secondary: '#00e29f',
   Black:"black",
   White:"white",
-  Red:"red"
+  Red:"red",
+  BackgroundColor:"#f4f6f8"
 };

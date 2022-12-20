@@ -1,45 +1,53 @@
 import {StyleSheet} from 'react-native';
+import Fonts from '../../config/Fonts';
 import {Color} from '../../constant/Color';
 
 const styles = StyleSheet.create({
   heading: {
-    fontSize: 25,
+    fontSize: Fonts.fontSize_16,
     paddingHorizontal: '8%',
     color: Color.Black,
-    paddingTop: '30%',
+    paddingTop: '10%',
   },
-  errormsg:{
-    color:Color.Red,
-    marginHorizontal:'8%'
-  },
-  button:{
+  button: {
     alignItems: 'center',
     textAlign: 'center',
     color: Color.White,
     fontWeight: '800',
-    paddingTop: '4%',
+    paddingTop: '3%',
   },
-  loginButtonContainer:{
+  ButtonContainer: {
     width: '80%',
     borderWidth: 1,
-    marginTop: 15,
+    marginTop: 10,
     borderRadius: 50,
     backgroundColor: Color.primary,
-    height: 50,
-    marginHorizontal:"10%"
+    height: '9%',
+    marginHorizontal: '10%',
   },
-  container: {
+  outercontainer: {
     flex: 1,
     justifyContent: 'center',
     backgroundColor: '#ecf0f1',
     padding: 8,
   },
   textinput: {
-    backgroundColor: 'white',
+    backgroundColor: Color.White,
     padding: 10,
     marginTop: 10,
-    fontSize:20
+    fontSize: Fonts.fontSize_15,
   },
+  modal:{
+    height:"65%",
+    width:"80%",
+    marginLeft:"10%",
+    marginTop:"30%",
+    backgroundColor: Color.White,
+  },
+  modalcontainer:{
+    flex:1,
+   backgroundColor:"grey"
+  }
 });
 
 export default styles;

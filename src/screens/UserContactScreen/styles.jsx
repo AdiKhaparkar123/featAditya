@@ -1,33 +1,40 @@
 import {StyleSheet} from 'react-native';
+import Fonts from '../../config/Fonts';
 import {Color} from '../../constant/Color';
 
 const styles = StyleSheet.create({
   heading: {
-    fontSize: 25,
+    fontSize: Fonts.fontSize_16,
     paddingHorizontal: '8%',
     color: Color.Black,
-    paddingTop: '30%',
+    paddingTop: '5%',
   },
-  errormsg:{
-    color:Color.Red,
-    marginHorizontal:'8%'
+  errormsg: {
+    color: Color.Red,
+    marginHorizontal: '8%',
   },
-  button:{
+  button: {
     alignItems: 'center',
     textAlign: 'center',
     color: Color.White,
-    fontWeight: '800',
+   fontSize:Fonts.fontSize_15,
     paddingTop: '4%',
   },
-  ButtonContainer:{
+  ButtonContainer: {
     width: '80%',
     borderWidth: 1,
     marginTop: 15,
     borderRadius: 50,
     backgroundColor: Color.primary,
     height: 50,
-    marginHorizontal:"10%"
-  }
+    marginHorizontal: '10%',
+  },
+  arrow: {
+    width: 20,
+    height: 20,
+    marginTop: 3,
+    resizeMode: 'contain',
+  },
 });
 
 export default styles;
