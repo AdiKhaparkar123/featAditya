@@ -68,6 +68,7 @@ const DemoFinalScreen = () => {
       <Modal animationType="fade" visible={isModalVisible} transparent={true}>
         <View style={styles.modalcontainer}>
           <View style={styles.modal}>
+            <Text style={styles.modalheader}>Data</Text>
             <ModalText text="Product:-" data={userData.department} />
             <ModalText text="Department:-" data={userData.field} />
             <ModalText

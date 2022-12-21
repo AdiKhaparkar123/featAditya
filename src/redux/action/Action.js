@@ -21,4 +21,3 @@ export const addUserName = (name, surname) => ({
   payload: {name, surname},
 });
 
-// name,surname,companyName,jobTitle

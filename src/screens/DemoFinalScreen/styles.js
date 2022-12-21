@@ -26,9 +26,9 @@ const styles = StyleSheet.create({
     marginHorizontal: '10%',
   },
   outercontainer: {
-    flex: 1,
+    // flex: 1,
     justifyContent: 'center',
-    backgroundColor: '#ecf0f1',
+    backgroundColor: Color.lightgrey,
     padding: 8,
   },
   textinput: {
@@ -38,15 +38,23 @@ const styles = StyleSheet.create({
     fontSize: Fonts.fontSize_15,
   },
   modal: {
+    flex: 1,
     height: '65%',
     width: '80%',
     marginLeft: '10%',
     marginTop: '30%',
+    marginBottom: '30%',
     backgroundColor: Color.White,
+    padding: 20,
+    borderRadius: 10,
   },
   modalcontainer: {
     flex: 1,
-    backgroundColor: 'grey',
+    backgroundColor: Color.blackLite,
+  },
+  modalheader: {
+    fontSize: Fonts.fontSize_15,
+    paddingBottom: '20%',
   },
 });
 
